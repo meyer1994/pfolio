@@ -6,19 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div class="bg-slate-950 h-screen flex justify-center text-slate-400">
-      <div class="flex flex-col justify-center max-w-[80%] lg:max-w-[40%]">
+    <div class="bg-slate-950 min-h-screen flex justify-center text-slate-400">
+      <div class="flex flex-col justify-center max-w-[80%] md:max-w-[60%] lg:max-w-[40%]">
 
-        <div>
-          <h3 class="text-lg font-bold"># Who am I?</h3>
+        <!-- Who am I? -->
+        <section class="my-[40vh]">
+          <h1 class="text-2xl font-bold"> # who am I? </h1>
           <hr class="border-2 border-dotted border-slate-400 my-4 rounded">
-          <div v-if="body"> </div>
-        </div>
+          <p>
+            My name is João [ʒuˈɐ̃w] and I am a software developer. I was born 
+            in Brazil but am currently working in Dublin, Ireland. I like to 
+            play around with new technologies and I am not afraid to learn new 
+            stuff. It does not matter how complex or different it might be, 
+            I'll try to build something with cool it. You can find me on 
+            <a 
+              href="https://github.com/meyer1994" 
+              target="_blank"
+              class="underline underline-offset-2 hover:decoration-2"
+            >GitHub</a>
+            and
+            <a 
+              href="https://www.linkedin.com/in/meyer1994/" 
+              target="_blank"
+              class="underline underline-offset-2 hover:decoration-2"
+            >Linkedin</a>
+          </p>
+          <p class="mt-2">I &lt;3 open source </p>
+        </section>
 
+        <!-- interests -->
+        <section class="my-[50vh]">
+          <h1 class="text-2xl font-bold"> # recent interests </h1>
+          <hr class="border-2 border-dotted border-slate-400 my-4 rounded">
+          <p>
+            As usual, I've been playing around with lots of different tools 
+            lately. Some of them are, but not limited to: dagster, nginx, nuxt,
+            vue, render, AWS lambdas, postgres
+          </p>
+        </section>
+
+        <!-- projects -->
+        <section class="mt-[40vh] mb-[10vh]">
+          <h1 class="text-2xl font-bold"> # cool projects </h1>
+          <hr class="border-2 border-dotted border-slate-400 my-4 rounded">
+          <p>
+            Some of my personal projects which I am most found of. For more,
+            you can check my GitHub             
+            <a 
+              href="https://github.com/meyer1994" 
+              target="_blank"
+              class="underline underline-offset-2 hover:decoration-2"
+            >@meyer1994</a>
+          </p>
+
+          <!-- ipgit -->
+          <section class="mt-[10vh]">
+            <h3 class="text-lg font-bold">
+              # <a 
+                href="https://github.com/meyer1994/ipgit"
+                class="underline underline-offset-2 hover:decoration-2"
+              >ipgit</a>
+            </h3>
+            <p class="mt-2">
+              A git remote server that allows push/pull of git repos and saves
+              all data into IPFS
+            </p>
+          </section>
+
+          <!-- gitserver -->
+          <section class="mt-5">
+            <h3 class="text-lg font-bold">
+              # <a 
+                href="https://github.com/meyer1994/gitserver"
+                class="underline underline-offset-2 hover:decoration-2"
+              >gitserver</a>
+            </h3>
+            <p class="mt-2">
+              An extremely simple git http server created using python in order
+              to learn how git over http works
+            </p>
+          </section>
+
+          <!-- saaslite -->
+          <section class="mt-5">
+            <h3 class="text-lg font-bold">
+              # <a 
+                href="https://github.com/meyer1994/saaslite"
+                class="underline underline-offset-2 hover:decoration-2"
+              >saaslite</a>
+            </h3>
+            <p class="mt-2">
+              Querying static files using SQL. Service running on AWS lambdas that
+              allows any user to upload files, csv, json, sqlite and allows 
+              querying those files via SQL using a http interface
+            </p>
+          </section>
+
+          <!-- rooms -->
+          <section class="mt-5">
+            <h3 class="text-lg font-bold">
+              # <a 
+                href="https://github.com/meyer1994/rooms"
+                class="underline underline-offset-2 hover:decoration-2"
+              >rooms</a>
+            </h3>
+            <p class="mt-2">
+              Websocket rooms/channels made easy. Service running on Render to
+              help people build realtime applications easily
+            </p>
+          </section>
+
+          <!-- mongrest -->
+          <section class="mt-5">
+            <h3 class="text-lg font-bold">
+              # <a 
+                href="https://github.com/meyer1994/mongrest"
+                class="underline underline-offset-2 hover:decoration-2"
+              >mongrest</a>
+            </h3>
+            <p class="mt-2">
+              My attempt on creating a Supabase like experience using mongo
+            </p>
+          </section>
+
+          <!-- camel-discord -->
+          <section class="mt-5">
+            <h3 class="text-lg font-bold">
+              # <a 
+                href="https://github.com/meyer1994/camel-discord"
+                class="underline underline-offset-2 hover:decoration-2"
+              >camel-discord</a>
+            </h3>
+            <p class="mt-2">
+              Apache Camel component to interact with Discord
+            </p>
+          </section>
+          
+          <!-- ucloud -->
+          <section class="mt-5">
+            <h3 class="text-lg font-bold">
+              # <a 
+                href="https://github.com/meyer1994/μcloud"
+                class="underline underline-offset-2 hover:decoration-2"
+              >μcloud</a>
+            </h3>
+            <p class="mt-2">
+              Web server which provides some commonly needed functionallity, 
+              rest, queues and static files that can be configured to use 
+              multiple backends for each feature
+            </p>
+          </section>
+        </section>
       </div>
     </div>
   </body>
