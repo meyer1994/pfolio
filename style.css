@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* subtle vignette: darkens the edges over the base background */
+.vignette {
+  background-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 62%,
+    rgba(0, 0, 0, 0.38) 100%
+  );
+}
