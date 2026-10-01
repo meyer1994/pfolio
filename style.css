@@ -3,8 +3,13 @@
 /* subtle vignette: darkens the edges over the base background */
 .vignette {
   background-image: radial-gradient(
-    ellipse at center,
+    ellipse at bottom right,
     rgba(0, 0, 0, 0) 62%,
     rgba(0, 0, 0, 0.38) 100%
   );
+}
+
+/* keep long URLs from overflowing on narrow screens */
+a {
+  overflow-wrap: anywhere;
 }
